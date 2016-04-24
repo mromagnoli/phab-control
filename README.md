@@ -9,6 +9,7 @@ Installation (dev)
 2. Ensure that the Developer mode checkbox in the top right-hand corner is checked.
 3. Click *Load unpacked extension…* to pop up a file-selection dialog.
 4. Navigate to the directory in which your extension files live *(app)*, and select it.
+5. Set Phab URL by clicking in *Options* link in the **PhabControl** extension item in the *Extensions* menu. Ex: If the url of your Phabricator site is: *http://phab.mydev.com* you can set just **phab** or **phab.mydev**.
 
 TODOs
 ----
