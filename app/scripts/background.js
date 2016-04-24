@@ -28,6 +28,10 @@ chrome.runtime.onMessage.addListener(
               executeScript('scripts/hideAllComments.js');
               sendResponse({}); // sending back empty response to sender
               break;
+          case "showAll":
+              executeScript('scripts/showAllComments.js');
+              sendResponse({}); // sending back empty response to sender
+              break;
           default:
               // helps debug when request directive doesn't match
               alert("Unmatched request of '" + request + "' from script to background.js from " + sender);
