@@ -14,9 +14,14 @@
     ],
     "persistend": false
   },
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
   "permissions": [
     "declarativeContent",
-    "activeTab"
+    "activeTab",
+    "storage"
   ],
   "page_action": {
     "default_icon": {
@@ -28,7 +33,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://phabricator.evbhome.com/D*"],
+      "matches": ["*://*/*"],
       "js": [
         "bower_components/jquery/dist/jquery.js",
         "scripts/hideAllComments.js"
