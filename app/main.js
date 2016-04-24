@@ -1,7 +1,7 @@
-clearAllComments();
+hideAllComments();
 
-function clearAllComments() {
+function hideAllComments() {
 	var allComments = $('.differential-inline-comment');
-	allComments.hide();
 
+	allComments.hide();
 }

@@ -21,7 +21,7 @@
       "19": "images/icon-19.png",
       "38": "images/icon-38.png"
     },
-    "default_title": "phab chrome extension",
+    "default_title": "PhabControl",
     "default_popup": "popup.html"
   },
   "content_scripts": [
@@ -29,7 +29,6 @@
       "matches": ["https://phabricator.evbhome.com/D*"],
       "js": [
         "bower_components/jquery/dist/jquery.js",
-        "bower_components/underscore/underscore.js",
         "main.js"
       ],
       "run_at": "document_end"
