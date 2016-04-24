@@ -16,6 +16,7 @@ TODOs
 * Hide/Show comments from specific commentators
 * Hide/Show comments from author
 * Pack extension to Chrome Store
+* Keybindings FTW!
 * *You tell me what else!*
 
 
