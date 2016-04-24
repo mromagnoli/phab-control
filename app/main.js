@@ -1,7 +1,7 @@
-(function() {
-	setTimeout(function(){
-		var bla = $(".differential-inline-comment");
-		console.log(bla);
-		bla.hide();
-	}, 3000);
-})();
+clearAllComments();
+
+function clearAllComments() {
+	var allComments = $('.differential-inline-comment');
+	allComments.hide();
+
+}

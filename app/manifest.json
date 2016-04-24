@@ -9,11 +9,12 @@
   },
   "default_locale": "en",
   "background": {
-    "scripts": []
+    "scripts": ["background.js"],
+    "persistend": false
   },
   "permissions": [
-    "contentSettings",
-    "storage"
+    "declarativeContent",
+    "activeTab"
   ],
   "page_action": {
     "default_icon": {
