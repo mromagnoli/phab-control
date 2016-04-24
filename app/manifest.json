@@ -9,7 +9,9 @@
   },
   "default_locale": "en",
   "background": {
-    "scripts": ["background.js"],
+    "scripts": [
+      "scripts/background.js"
+    ],
     "persistend": false
   },
   "permissions": [
@@ -29,7 +31,7 @@
       "matches": ["https://phabricator.evbhome.com/D*"],
       "js": [
         "bower_components/jquery/dist/jquery.js",
-        "main.js"
+        "scripts/hideAllComments.js"
       ],
       "run_at": "document_end"
     }
