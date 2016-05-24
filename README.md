@@ -11,15 +11,21 @@ Installation (dev)
 4. Navigate to the directory in which your extension files live *(app)*, and select it.
 5. Set Phab URL by clicking in *Options* link in the **PhabControl** extension item in the *Extensions* menu. Ex: If the url of your Phabricator site is: *http://phab.mydev.com* you can set just **phab** or **phab.mydev**.
 
+Keybindings
+-----
+By default, you can execute _Show_ and _Hide_ all comments directly from your keyboard.
+* **Hide**: _Alt+Shift+P_
+* **Show**: _Alt+Shift+L_
+
+These are _suggested_ combinations, if you have them already taken you can configure your own by going to the _Extensions_ config and click _Keyboard shortcuts_ link at the bottom and select your _weapon of choice_.
+
 TODOs
 ----
 * Identify who are the commentators
 * Hide/Show comments from specific commentators
 * Hide/Show comments from author
 * Pack extension to Chrome Store
-* Keybindings FTW!
-* *You tell me what else!*
-
+* ~~Keybindings FTW!~~
 
 
 License

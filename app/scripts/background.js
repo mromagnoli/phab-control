@@ -26,6 +26,18 @@ chrome.runtime.onInstalled.addListener(function() {
 
 chrome.pageAction.onClicked.addListener(function(tab) {});
 
+chrome.commands.onCommand.addListener(function(command) {
+  switch (command) {
+    case "hide-comments":
+        executeScript('scripts/hideAllComments.js');
+        break;
+
+    case "show-comments":
+        executeScript('scripts/showAllComments.js');
+        break;
+  }
+});
+
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
         switch (request.directive) {
