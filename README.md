@@ -4,12 +4,11 @@ Since the implementation of Phabricator does not allow to hide the comments in t
 
 Installation (dev)
 ----
-0. Fork this repo
+0. Download package from _package/phab chrome extension-0.0.2.zip_, unzip it.
 1. Visit _chrome://extensions_ in your browser (or open up the Chrome menu by clicking the icon to the far right of the Omnibox:  The menu's icon is three horizontal bars. and select **Extensions** under the **Tools** menu to get to the same place).
 2. Ensure that the Developer mode checkbox in the top right-hand corner is checked.
 3. Click *Load unpacked extension…* to pop up a file-selection dialog.
-4. Navigate to the directory in which your extension files live *(app)*, and select it.
-5. Set Phab URL by clicking in *Options* link in the **PhabControl** extension item in the *Extensions* menu. Ex: If the url of your Phabricator site is: *http://phab.mydev.com* you can set just **phab** or **phab.mydev**.
+4. Navigate to the directory where you unzipped the package, and select it.
 
 Keybindings
 -----
