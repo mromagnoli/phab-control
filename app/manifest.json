@@ -36,7 +36,10 @@
       "matches": ["*://*/*"],
       "js": [
         "bower_components/jquery/dist/jquery.js",
-        "scripts/hideAllComments.js"
+        "scripts/hideAllComments.js",
+        "scripts/showAllComments.js",
+        "scripts/popup.js",
+        "scripts/options.js"
       ],
       "run_at": "document_end"
     }
