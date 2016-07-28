@@ -105,7 +105,7 @@ gulp.task('watch', ['lint', 'babel', 'html'], () => {
 });
 
 gulp.task('size', () => {
-  return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
+  return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: false}));
 });
 
 gulp.task('wiredep', () => {

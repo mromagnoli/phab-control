@@ -1,16 +1,18 @@
+'use strict';
+
 var options = {
-  hideAll: function(e) {
+  hideAll: function hideAll(e) {
     return clickHandler('hideAll');
   },
-  showAll: function(e) {
+  showAll: function showAll(e) {
     return clickHandler('showAll');
   }
 };
 
 function clickHandler(option) {
-    chrome.runtime.sendMessage({directive: option}, function(response) {
-        // nothing to do with response
-    });
+  chrome.runtime.sendMessage({ directive: option }, function (response) {
+    // nothing to do with response
+  });
 }
 
 document.addEventListener('DOMContentLoaded', function () {

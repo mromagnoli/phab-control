@@ -1,5 +1,3 @@
-'use strict';
-
 hideAllComments();
 
 function hideAllComments() {
