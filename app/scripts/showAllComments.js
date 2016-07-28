@@ -1,3 +1,5 @@
+'use strict';
+
 showAllComments();
 
 function showAllComments() {
