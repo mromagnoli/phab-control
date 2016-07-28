@@ -24,11 +24,11 @@ chrome.pageAction.onClicked.addListener(function (tab) {});
 
 chrome.commands.onCommand.addListener(function (command) {
   switch (command) {
-    case "hide-comments":
+    case 'hide-comments':
       executeScript('scripts/hideAllComments.js');
       break;
 
-    case "show-comments":
+    case 'show-comments':
       executeScript('scripts/showAllComments.js');
       break;
   }
@@ -36,17 +36,17 @@ chrome.commands.onCommand.addListener(function (command) {
 
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   switch (request.directive) {
-    case "hideAll":
+    case 'hideAll':
       executeScript('scripts/hideAllComments.js');
       sendResponse({}); // sending back empty response to sender
       break;
-    case "showAll":
+    case 'showAll':
       executeScript('scripts/showAllComments.js');
       sendResponse({}); // sending back empty response to sender
       break;
     default:
       // helps debug when request directive doesn't match
-      alert("Unmatched request of '" + request + "' from script to background.js from " + sender);
+      alert('Unmatched request of ' + request + ' from script to background.js from ' + sender);
   }
 });
 
